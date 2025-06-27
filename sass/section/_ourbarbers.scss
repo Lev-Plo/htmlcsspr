@@ -1,0 +1,109 @@
+.ourbarbers {
+    background-color: gray;
+    padding: 60px 0;
+  
+    @media (min-width: 1200px) {
+      padding: 94px 0;
+    }
+  
+    &__title {
+      color: $brand-dark-text-color;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+  
+      @media (min-width: 768px) {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+  
+      @media (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+      }
+    }
+  
+    &__list {
+      @include flexbox(flex-start, stretch);
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+  
+      @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+  
+      @media (min-width: 1200px) {
+        flex-wrap: nowrap;
+      }
+    }
+  
+    &__item {
+      width: 100%;
+      width: 450px;
+      text-align: center;
+      background-color: $white-color;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                  0 1px 1px rgba(0, 0, 0, 0.14),
+                  0 2px 1px rgba(0, 0, 0, 0.2);
+  
+      @media (min-width: 768px) {
+        width: calc(50% - 15px);
+      }
+  
+      @media (min-width: 1200px) {
+        width: calc(25% - 22.5px);
+      }
+    }
+  
+    &__box {
+      padding: 30px 0;
+    }
+  
+    &__name {
+      color: $brand-dark-text-color;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  
+    &__text {
+      color: $brand-light-text-color;
+      font-size: 16px;
+    }
+  
+    &__socialmedia__list {
+      @include flexbox();
+      gap: 10px;
+      margin-top: 16px;
+    }
+  
+    &__socialmedia__link {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      @include flexbox();
+      background-color: rgba(255, 255, 255, 0.1);
+      @extend %transition;
+  
+      &:hover {
+        background-color: $brand-blue-color;
+  
+        .team__socialmedia__icon {
+          fill: $white-color;
+        }
+      }
+    }
+  
+    &__socialmedia__icon {
+      width: 20px;
+      height: 20px;
+      fill: $brand-light-icon-color;
+      @extend %transition;
+    }
+  }
