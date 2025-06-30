@@ -455,4 +455,80 @@ body {
   padding: 12px 20px;
   border-radius: 25px;
   border: 1px solid #FF6C00;
+}
+
+.ourbarbers {
+  padding: 84px 0;
+}
+.ourbarbers__atmosphere {
+  color: #303030;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.ourbarbers__title {
+  color: #303030;
+  font-family: "Raleway";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+.ourbarbers__name {
+  color: #303030;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.ourbarbers__text {
+  color: #FF6C00;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.ourbarbers__icon {
+  width: 44px;
+  height: 44px;
+  fill: #fff;
+}
+
+.service {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  display: flex;
+}
+.service__list {
+  width: 418px;
+  height: 360px;
+}
+.service__item {
+  justify-content: space-between;
+}
+
+.latin {
+  padding: 84px 0;
+}
+.latin__quote {
+  width: 338px;
+  color: #303030;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 71px;
+}
+.latin__item {
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */

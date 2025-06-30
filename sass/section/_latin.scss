@@ -1,0 +1,18 @@
+.latin {
+    padding: 84px 0;
+
+    &__quote {
+        width: 338px;
+        color: $brand-dark-text-color;
+        font-family: "Open Sans";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 71px;
+    }
+
+    &__item {
+        gap: 30px;
+    }
+}
